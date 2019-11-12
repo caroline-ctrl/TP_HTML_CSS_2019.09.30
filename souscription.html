@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta charset="UFT-8">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" media="screen" type="text/css" />
+    <title>Formulaire de souscritpion</title>
+</head>
+
+<body>
+    <header>
+            <nav>
+                    <ul>
+                        <li class="cont"><a href="association.html">Association</a>
+                            <ul class="submenu">
+                                <li><a href="histoire.html">Histoire</a></li>
+                                <li><a href="equipe.html">Equipe</a></li>
+                                <li><a href="mission.html">Notre mission</a></li>
+                            </ul>
+                        </li>
+                        <li class="cont"><a href="activite.html">Activités</a>
+                            <ul class="submenu">
+                                <li><a href="formation.html">Formations</a></li>
+                                <li><a href="vente.html">Vente</a></li>
+                            </ul>
+                        </li>
+                        <li class="cont"><a href="partenaire.html">Partenaire</a></li>
+                        <li class="cont"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        <a href="projet.html"><img id="logo3" src="logo3.png" alt="logo"></a>
+
+        <div id="titre">
+            <h1>DON</h1>
+            <p><em>"Sauver l'espoir, sauver les animaux qui sont notre espoir"</em>, -Konrad Lorenz-</p>
+        </div>
+    </header>
+
+    <main>
+        <h1>Je choisis ma récurance de don</h1>
+        <form>
+            <div id="formulaire">
+                <!--bouton radio, choix du don-->
+                <fieldset>
+                    <legend>Mon don</legend>
+                    <div id="un">
+                        <input type="radio" name="oui" value="unique">
+                        <label for="unique">Je donne une fois.</label>
+                        <input type="radio" name="oui" value="mensuel">
+                        <label for="mensuel">Je donne tous les mois.</label><br>
+                    </div>
+
+                    <!--montant-->
+                    <div id="deux">
+                        <label for="montant">Je fais un don de :</label>
+                        <input type="phone" name="montant">
+                        <label for="montant">€</label><br>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mes coordonnées</legend>
+                    <div id="coor">
+                        <!--Coordonnées-->
+                        <label id="civ" for="civilite">Civilité</label>
+                        <select name="civilite" id="civilite">
+                            <option value="selec">Selectionner</option>
+                            <option value="madame">Madame</option>
+                            <option value="monsieur">Monsieur</option>
+                        </select><br>
+
+                        <label for="nom" id="prenom">Prénom</label>
+                        <input type="text" id="pren">
+
+                        <label for="nom" id="nom">Nom</label>
+                        <input type="text" id="nom1"><br>
+
+                        <label for="email" id="mail">Email</label>
+                        <input type="email" id="email"><br>
+
+                        <label for="societe" id="societe">Numéro de téléphone</label>
+                        <input type="phone" id="soc">
+
+                        <label for="adresse" id="adr">Adresse</label>
+                        <input type="text" id="adresse"><br>
+
+                        <label for="appart" id="app">App, esc, étage</label>
+                        <input type="text" id="appart">
+
+                        <label for="bat" id="bat">Bat, résidence</label>
+                        <input type="text" id="res">
+
+                        <label for="lieu" id="dit">Lieu dit, boite postale</label>
+                        <input type="text" id="lieu"><br>
+
+                        <label for="code" id="post">Code postal</label>
+                        <input type="phone" id="code">
+
+                        <label for="ville" id="city">Ville</label>
+                        <input type="text" id="city1">
+
+                        <label for="pays" id="countries">Pays</label>
+                        <input type="text" id="pays">
+                    </div>
+                </fieldset>
+            </div>
+            <input type="submit" value="envoyer" id="submit">
+        </form>
+    </main>
+    <footer>
+            <p>Association DON | 69 rue George Bress, 30900 NIMES | assos.don@gmail.com | 04.66.00.00.00.</p>
+    </footer>
+</body>
+
+
+</html>
